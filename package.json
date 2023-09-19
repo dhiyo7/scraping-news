@@ -2,10 +2,10 @@
   "name": "scrapingNews",
   "version": "1.0.0",
   "description": "Scraping web news indo with sentiment analys",
-  "main": "index.js",
+  "main": "functions/api.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "serve-server": "pm2 start app.config.json && pm2 list"
+    "build": "netlify deploy --prod"
+
   },
   "author": "Dhiyo Reksa || dhiyo7",
   "license": "MIT",
@@ -16,6 +16,8 @@
     "express": "^4.18.2",
     "morgan": "^1.10.0",
     "multilang-sentiment": "^2.0.0",
-    "nodemon": "^2.0.21"
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^2.0.21",
+    "serverless-http": "^3.2.0"
   }
 }
